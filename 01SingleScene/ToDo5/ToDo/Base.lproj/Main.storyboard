@@ -53,6 +53,10 @@
                             <constraint firstAttribute="trailing" secondItem="P38-k9-7Mq" secondAttribute="trailing" constant="20" symbolic="YES" id="qG1-iX-fjj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputField" destination="lqa-ca-WR4" id="4Tp-wa-YKD"/>
+                        <outlet property="todoListView" destination="A6x-hc-AzM" id="eaS-Gl-ivk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

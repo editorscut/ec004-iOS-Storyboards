@@ -1,15 +1,8 @@
-//
-//  DSTViewController.m
-//  ToDo
-//
-//  Created by Daniel Steinberg on 12/14/13.
-//  Copyright (c) 2013 Dim Sum Thinking. All rights reserved.
-//
-
 #import "DSTViewController.h"
 
 @interface DSTViewController ()
-
+@property (weak, nonatomic) IBOutlet UITextField *inputField;
+@property (weak, nonatomic) IBOutlet UITextView *todoListView;
 @end
 
 @implementation DSTViewController
