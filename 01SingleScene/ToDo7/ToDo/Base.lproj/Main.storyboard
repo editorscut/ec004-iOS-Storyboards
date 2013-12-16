@@ -13,30 +13,20 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P38-k9-7Mq">
-                                <rect key="frame" x="270" y="28" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="BvT-ga-fqC"/>
-                                </constraints>
-                                <state key="normal" title="Add">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="addButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cvy-Ft-Nzh"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New To do" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lqa-ca-WR4">
-                                <rect key="frame" x="20" y="28" width="242" height="30"/>
+                                <rect key="frame" x="20" y="28" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="McS-sj-de7"/>
+                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6x-hc-AzM">
-                                <rect key="frame" x="20" y="66" width="280" height="494"/>
+                                <rect key="frame" x="20" y="66" width="280" height="406"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -49,11 +39,9 @@
                             <constraint firstItem="lqa-ca-WR4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="9Ju-w8-A1U"/>
                             <constraint firstItem="A6x-hc-AzM" firstAttribute="top" secondItem="lqa-ca-WR4" secondAttribute="bottom" constant="8" symbolic="YES" id="DSu-TW-U6V"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="A6x-hc-AzM" secondAttribute="bottom" constant="20" symbolic="YES" id="HZx-UT-y4C"/>
-                            <constraint firstItem="P38-k9-7Mq" firstAttribute="leading" secondItem="lqa-ca-WR4" secondAttribute="trailing" constant="8" symbolic="YES" id="Msf-zC-wjc"/>
-                            <constraint firstItem="P38-k9-7Mq" firstAttribute="bottom" secondItem="lqa-ca-WR4" secondAttribute="bottom" id="T2R-1j-bwn"/>
+                            <constraint firstAttribute="trailing" secondItem="lqa-ca-WR4" secondAttribute="trailing" constant="20" symbolic="YES" id="S9D-ie-xE0"/>
                             <constraint firstItem="A6x-hc-AzM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="Wci-iL-HKN"/>
                             <constraint firstAttribute="trailing" secondItem="A6x-hc-AzM" secondAttribute="trailing" constant="20" symbolic="YES" id="Y2r-Of-xXk"/>
-                            <constraint firstAttribute="trailing" secondItem="P38-k9-7Mq" secondAttribute="trailing" constant="20" symbolic="YES" id="qG1-iX-fjj"/>
                         </constraints>
                     </view>
                     <connections>
@@ -68,6 +56,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
