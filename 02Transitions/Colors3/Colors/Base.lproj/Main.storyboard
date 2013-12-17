@@ -38,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3y-Ec-Uip" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1499" y="62"/>
+            <point key="canvasLocation" x="1439" y="81"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dsc-7m-v5Y">
@@ -105,10 +105,13 @@
                             <constraint firstAttribute="centerY" secondItem="Cnd-vO-28a" secondAttribute="centerY" constant="-60" id="tFi-dt-N2p"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="nJr-Yk-BA2" kind="modal" identifier="showGreenScene" id="q33-L4-JvF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="915" y="81"/>
+            <point key="canvasLocation" x="919" y="81"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
