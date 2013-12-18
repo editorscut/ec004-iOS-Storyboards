@@ -20,7 +20,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Evk-p4-HSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1499" y="-575"/>
+            <point key="canvasLocation" x="1439" y="-519"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qLp-0n-6U4">
@@ -97,7 +97,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zRJ-Pw-S59" kind="modal" id="zpq-tn-DVQ"/>
+                                    <segue destination="zRJ-Pw-S59" kind="modal" identifier="showBlueScene" id="zpq-tn-DVQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="81"/>
+            <point key="canvasLocation" x="811" y="81"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
