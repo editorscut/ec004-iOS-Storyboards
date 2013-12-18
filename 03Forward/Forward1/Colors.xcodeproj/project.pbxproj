@@ -21,6 +21,7 @@
 		6274A70118609166008460AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6274A6E318609166008460AC /* UIKit.framework */; };
 		6274A70918609166008460AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6274A70718609166008460AC /* InfoPlist.strings */; };
 		6274A70B18609166008460AC /* ColorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6274A70A18609166008460AC /* ColorsTests.m */; };
+		6274A7161862161F008460AC /* DSTColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6274A7151862161F008460AC /* DSTColorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		6274A70618609166008460AC /* ColorsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorsTests-Info.plist"; sourceTree = "<group>"; };
 		6274A70818609166008460AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6274A70A18609166008460AC /* ColorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorsTests.m; sourceTree = "<group>"; };
+		6274A7141862161F008460AC /* DSTColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTColorViewController.h; sourceTree = "<group>"; };
+		6274A7151862161F008460AC /* DSTColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTColorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				6274A6F518609166008460AC /* DSTViewController.m */,
 				6274A6F718609166008460AC /* Images.xcassets */,
 				6274A6E618609166008460AC /* Supporting Files */,
+				6274A7141862161F008460AC /* DSTColorViewController.h */,
+				6274A7151862161F008460AC /* DSTColorViewController.m */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6274A7161862161F008460AC /* DSTColorViewController.m in Sources */,
 				6274A6F018609166008460AC /* DSTAppDelegate.m in Sources */,
 				6274A6F618609166008460AC /* DSTViewController.m in Sources */,
 				6274A6EC18609166008460AC /* main.m in Sources */,
@@ -461,6 +467,7 @@
 				6274A71018609166008460AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6274A71118609166008460AC /* Build configuration list for PBXNativeTarget "ColorsTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +476,7 @@
 				6274A71318609166008460AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

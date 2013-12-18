@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Color View Controller-->
         <scene sceneID="Dfs-2z-ieM">
             <objects>
-                <viewController storyboardIdentifier="redScene" id="KcY-75-LIr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="redScene" id="KcY-75-LIr" customClass="DSTColorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dgC-UC-0Vn"/>
                         <viewControllerLayoutGuide type="bottom" id="PAj-jR-Mgv"/>
@@ -15,7 +15,7 @@
                     <view key="view" contentMode="scaleToFill" id="LsS-az-0BH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Evk-p4-HSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -33,7 +33,7 @@
                     <view key="view" contentMode="scaleToFill" id="77E-ey-nNa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3y-Ec-Uip" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -51,7 +51,7 @@
                     <view key="view" contentMode="scaleToFill" id="kuC-ZT-9oP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDh-bL-Dm3" userLabel="First Responder" sceneMemberID="firstResponder"/>
