@@ -6,7 +6,11 @@
 
 @implementation DSTViewController
 
-- (IBAction)cancelSignIn:(UIStoryboardSegue *)segue {}
-- (IBAction)completeSignIn:(UIStoryboardSegue *)segue {}
+- (IBAction)cancelSignIn:(UIStoryboardSegue *)segue {
+    NSLog(@"cancelSignIn: in DSTViewController");
+}
+- (IBAction)completeSignIn:(UIStoryboardSegue *)segue {
+    NSLog(@"completeSignIn: in DSTViewController");
+}
 
 @end
