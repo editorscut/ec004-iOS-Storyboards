@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Color View Controller-->
         <scene sceneID="dsc-7m-v5Y">
             <objects>
-                <viewController id="zRJ-Pw-S59" sceneMemberID="viewController">
+                <viewController id="zRJ-Pw-S59" customClass="DSTColorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PzM-C2-8ZN"/>
                         <viewControllerLayoutGuide type="bottom" id="DR2-a5-LT1"/>
@@ -15,8 +15,24 @@
                     <view key="view" contentMode="scaleToFill" id="kuC-ZT-9oP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMH-kK-slp">
+                                <rect key="frame" x="139" y="230" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="pMH-kK-slp" secondAttribute="centerX" id="1UD-sH-VOC"/>
+                            <constraint firstAttribute="centerY" secondItem="pMH-kK-slp" secondAttribute="centerY" id="Xed-gs-d4k"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorLabel" destination="pMH-kK-slp" id="fyh-2l-d9s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDh-bL-Dm3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,6 +103,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fIj-l8-bes"/>
+        <segue reference="ACf-hh-KGW"/>
     </inferredMetricsTieBreakers>
 </document>

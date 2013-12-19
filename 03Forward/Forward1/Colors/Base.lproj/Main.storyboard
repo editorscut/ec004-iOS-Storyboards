@@ -22,10 +22,10 @@
             </objects>
             <point key="canvasLocation" x="1439" y="-519"/>
         </scene>
-        <!--View Controller-->
+        <!--Color View Controller-->
         <scene sceneID="qLp-0n-6U4">
             <objects>
-                <viewController id="nJr-Yk-BA2" sceneMemberID="viewController">
+                <viewController id="nJr-Yk-BA2" customClass="DSTColorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g2b-k1-TAy"/>
                         <viewControllerLayoutGuide type="bottom" id="34l-dV-DaG"/>
@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="1439" y="81"/>
         </scene>
-        <!--View Controller-->
+        <!--Color View Controller-->
         <scene sceneID="dsc-7m-v5Y">
             <objects>
-                <viewController id="zRJ-Pw-S59" sceneMemberID="viewController">
+                <viewController id="zRJ-Pw-S59" customClass="DSTColorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PzM-C2-8ZN"/>
                         <viewControllerLayoutGuide type="bottom" id="DR2-a5-LT1"/>
