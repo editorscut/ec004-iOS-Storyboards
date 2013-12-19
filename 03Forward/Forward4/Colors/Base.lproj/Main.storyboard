@@ -4,42 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Color View Controller-->
-        <scene sceneID="Dfs-2z-ieM">
-            <objects>
-                <viewController storyboardIdentifier="redScene" id="KcY-75-LIr" customClass="DSTColorViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dgC-UC-0Vn"/>
-                        <viewControllerLayoutGuide type="bottom" id="PAj-jR-Mgv"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="LsS-az-0BH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Evk-p4-HSB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1439" y="-519"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="qLp-0n-6U4">
-            <objects>
-                <viewController id="nJr-Yk-BA2" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="g2b-k1-TAy"/>
-                        <viewControllerLayoutGuide type="bottom" id="34l-dV-DaG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="77E-ey-nNa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3y-Ec-Uip" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1439" y="81"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="dsc-7m-v5Y">
             <objects>
@@ -56,7 +20,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDh-bL-Dm3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1439" y="681"/>
+            <point key="canvasLocation" x="1359" y="81"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -77,7 +41,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="redButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3A5-0z-AV0"/>
+                                    <segue destination="zRJ-Pw-S59" kind="modal" identifier="showRedScene" id="ACf-hh-KGW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sq8-5B-Wzg">
@@ -87,7 +51,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="greenButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hrA-Zo-XIz"/>
+                                    <segue destination="zRJ-Pw-S59" kind="modal" id="fIj-l8-bes"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnd-vO-28a">
@@ -111,9 +75,6 @@
                             <constraint firstAttribute="centerY" secondItem="Cnd-vO-28a" secondAttribute="centerY" constant="-60" id="tFi-dt-N2p"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="nJr-Yk-BA2" kind="modal" identifier="showGreenScene" id="q33-L4-JvF"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,4 +86,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="fIj-l8-bes"/>
+    </inferredMetricsTieBreakers>
 </document>
