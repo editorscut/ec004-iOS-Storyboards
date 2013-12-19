@@ -13,17 +13,8 @@
 @end
 
 @implementation DSTViewController
-- (IBAction)redButtonTapped:(UIButton *)sender {
-    UIViewController *redViewController = [[self storyboard] instantiateViewControllerWithIdentifier:@"redScene"];
-    redViewController.view.backgroundColor = [UIColor redColor];
-    [self presentViewController:redViewController
-                       animated:YES
-                     completion:nil];
-}
-- (IBAction)greenButtonTapped:(UIButton *)sender {
-    [self performSegueWithIdentifier:@"showGreenScene"
-                              sender:self];
-}
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue
                  sender:(id)sender {
     UIViewController *newViewController = segue.destinationViewController;
@@ -31,8 +22,9 @@
         newViewController.view.backgroundColor = [UIColor greenColor];
     } else if ([segue.identifier isEqualToString:@"showBlueScene"]) {
         newViewController.view.backgroundColor = [UIColor blueColor];
+    } else if ([segue.identifier isEqualToString:@"showRedScene"]){
+        newViewController.view.backgroundColor = [UIColor redColor];
     }
-    
 }
 
 - (void)viewDidLoad

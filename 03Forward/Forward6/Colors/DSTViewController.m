@@ -7,32 +7,47 @@
 //
 
 #import "DSTViewController.h"
+#import "DSTColorViewController.h"
 
 @interface DSTViewController ()
 
 @end
 
 @implementation DSTViewController
-- (IBAction)redButtonTapped:(UIButton *)sender {
-    UIViewController *redViewController = [[self storyboard] instantiateViewControllerWithIdentifier:@"redScene"];
-    redViewController.view.backgroundColor = [UIColor redColor];
-    [self presentViewController:redViewController
-                       animated:YES
-                     completion:nil];
+
+- (void)showRedSceneForSegue:(UIStoryboardSegue *)segue
+                      sender:(id)sender {
+    DSTColorViewController *redController = segue.destinationViewController;
+    redController.displayColor = [UIColor redColor];
+    redController.displayText = [sender titleLabel].text;
 }
-- (IBAction)greenButtonTapped:(UIButton *)sender {
-    [self performSegueWithIdentifier:@"showGreenScene"
-                              sender:self];
+
+- (void)showGreenSceneForSegue:(UIStoryboardSegue *)segue
+                        sender:(id)sender {
+    DSTColorViewController *greenController = segue.destinationViewController;
+    greenController.displayColor = [UIColor greenColor];
+    greenController.displayText = [sender titleLabel].text;
 }
-- (void)prepareForSegue:(UIStoryboardSegue *)segue
-                 sender:(id)sender {
-    UIViewController *newViewController = segue.destinationViewController;
+
+- (void)showBlueSceneForSegue:(UIStoryboardSegue *)segue
+                       sender:(id)sender {
+    DSTColorViewController *blueController = segue.destinationViewController;
+    blueController.displayColor = [UIColor blueColor];
+    blueController.displayText = [sender titleLabel].text;
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue
+                  sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showGreenScene"]) {
-        newViewController.view.backgroundColor = [UIColor greenColor];
+        [self showGreenSceneForSegue:segue
+                              sender:sender];
     } else if ([segue.identifier isEqualToString:@"showBlueScene"]) {
-        newViewController.view.backgroundColor = [UIColor blueColor];
+        [self showBlueSceneForSegue:segue
+                             sender:sender];
+    } else if ([segue.identifier isEqualToString:@"showRedScene"]) {
+        [self showRedSceneForSegue:segue
+                            sender:sender];
     }
-    
 }
 
 - (void)viewDidLoad
