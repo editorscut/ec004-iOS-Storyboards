@@ -8,9 +8,14 @@
 @implementation DSTViewController
 
 - (void)signInViewControllerDidCancel:(DSTSignInViewController *)signInVC {
+    [signInVC dismissViewControllerAnimated:YES
+                                 completion:nil];
 }
 - (void)signInViewController:(DSTSignInViewController *)signInVC
                 didEnterName:(NSString *)name {
+    [signInVC dismissViewControllerAnimated:YES
+                                 completion:nil];
+    self.greetingLabel.text = name;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue

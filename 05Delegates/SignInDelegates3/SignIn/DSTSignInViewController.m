@@ -20,5 +20,8 @@
 - (IBAction)cancelButtonTapped:(UIButton *)sender {
     [self.delegate signInViewControllerDidCancel:self];
 }
-
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.signInField becomeFirstResponder];
+}
 @end
