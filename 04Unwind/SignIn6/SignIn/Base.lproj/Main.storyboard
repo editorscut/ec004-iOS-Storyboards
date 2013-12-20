@@ -79,7 +79,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="cancelButtonTapped:" destination="aTG-uo-d9S" eventType="touchUpInside" id="y7r-VS-qJe"/>
                                     <segue destination="Hhi-tS-Ilm" kind="unwind" identifier="cancelSignIn" unwindAction="cancelSignIn:" id="9KC-XU-x8d"/>
                                 </connections>
                             </button>
@@ -90,7 +89,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveButtonTapped:" destination="aTG-uo-d9S" eventType="touchUpInside" id="Q0w-En-rI5"/>
                                     <segue destination="Hhi-tS-Ilm" kind="unwind" identifier="completeSignIn" unwindAction="completeSignIn:" id="kyF-KZ-scW"/>
                                 </connections>
                             </button>

@@ -6,11 +6,6 @@
 @end
 
 @implementation DSTSignInViewController
-- (IBAction)saveButtonTapped:(UIButton *)sender {
-}
-
-- (IBAction)cancelButtonTapped:(UIButton *)sender {
-}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue
                  sender:(id)sender {
@@ -21,5 +16,10 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.signInField becomeFirstResponder];
+}
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self performSegueWithIdentifier:@"completeSignIn"
+                              sender:textField];
+    return YES;
 }
 @end
