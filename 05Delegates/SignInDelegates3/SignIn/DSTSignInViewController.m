@@ -5,10 +5,20 @@
 @end
 
 @implementation DSTSignInViewController
+- (void)submitSignInName {
+    [self.delegate signInViewController:self
+                           didEnterName:self.signInField.text];
+}
 - (IBAction)saveButtonTapped:(UIButton *)sender {
+    [self submitSignInName];
+}
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self submitSignInName];
+    return YES;
 }
 
 - (IBAction)cancelButtonTapped:(UIButton *)sender {
+    [self.delegate signInViewControllerDidCancel:self];
 }
 
 @end
