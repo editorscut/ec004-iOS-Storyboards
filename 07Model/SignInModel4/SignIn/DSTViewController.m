@@ -19,7 +19,11 @@
 }
 - (IBAction)completeSignIn:(UIStoryboardSegue *)segue {
     NSLog(@"completeSignIn: in DSTViewController");
-    
+}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue
+                 sender:(id)sender {
+    DSTSignInViewController *signInVC = segue.destinationViewController;
+    signInVC.model = self.model;
 }
 
 @end
