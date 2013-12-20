@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5037" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="DSTViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDp-Ys-R9x">
+                                <rect key="frame" x="20" y="28" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0k5-8X-HkV">
+                                <rect key="frame" x="136" y="269" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aTG-uo-d9S" kind="modal" id="nv9-dg-hI7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fDp-Ys-R9x" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="Je6-Qc-gMp"/>
+                            <constraint firstItem="fDp-Ys-R9x" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" symbolic="YES" id="QHz-MQ-DtB"/>
+                            <constraint firstAttribute="trailing" secondItem="fDp-Ys-R9x" secondAttribute="trailing" constant="20" symbolic="YES" id="a78-My-ev1"/>
+                            <constraint firstAttribute="centerX" secondItem="0k5-8X-HkV" secondAttribute="centerX" id="fcu-W6-yAi"/>
+                            <constraint firstAttribute="centerY" secondItem="0k5-8X-HkV" secondAttribute="centerY" id="mvr-qG-bDH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="fDp-Ys-R9x" id="cjd-yO-QwP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="21"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="JKy-Q0-VIE">
+            <objects>
+                <viewController id="aTG-uo-d9S" customClass="DSTSignInViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ix1-7P-O5i"/>
+                        <viewControllerLayoutGuide type="bottom" id="VpR-Z7-Bmf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vj1-fQ-cge">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sign in Please" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6if-EQ-wOA">
+                                <rect key="frame" x="20" y="28" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="aTG-uo-d9S" id="0nL-Cv-aZu"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNI-K6-oGU">
+                                <rect key="frame" x="56" y="108" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Hhi-tS-Ilm" kind="unwind" identifier="cancelSignIn" unwindAction="cancelSignIn:" id="9KC-XU-x8d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d90-uU-6MU">
+                                <rect key="frame" x="223" y="108" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Hhi-tS-Ilm" kind="unwind" identifier="completeSignIn" unwindAction="completeSignIn:" id="kyF-KZ-scW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6if-EQ-wOA" secondAttribute="trailing" constant="20" symbolic="YES" id="Afz-hN-c8t"/>
+                            <constraint firstAttribute="centerX" secondItem="wNI-K6-oGU" secondAttribute="centerX" constant="80" id="Ei3-eg-cnc"/>
+                            <constraint firstItem="wNI-K6-oGU" firstAttribute="top" secondItem="d90-uU-6MU" secondAttribute="top" id="PAL-ef-zMl"/>
+                            <constraint firstAttribute="centerX" secondItem="d90-uU-6MU" secondAttribute="centerX" constant="-80" id="YXg-0Z-zvh"/>
+                            <constraint firstItem="6if-EQ-wOA" firstAttribute="top" secondItem="ix1-7P-O5i" secondAttribute="bottom" constant="20" symbolic="YES" id="hQc-gJ-l2i"/>
+                            <constraint firstItem="6if-EQ-wOA" firstAttribute="leading" secondItem="vj1-fQ-cge" secondAttribute="leading" constant="20" symbolic="YES" id="uhD-5P-2gJ"/>
+                            <constraint firstItem="wNI-K6-oGU" firstAttribute="top" secondItem="6if-EQ-wOA" secondAttribute="bottom" constant="50" id="xOs-2E-HHR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="signInField" destination="6if-EQ-wOA" id="q7X-qN-cNO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ip-FG-iWY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Hhi-tS-Ilm" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1016" y="21"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
