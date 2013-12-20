@@ -22,6 +22,7 @@
 		6243BB7C18631DA800D89CC7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6243BB7A18631DA800D89CC7 /* InfoPlist.strings */; };
 		6243BB7E18631DA800D89CC7 /* SignInTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6243BB7D18631DA800D89CC7 /* SignInTests.m */; };
 		6243BB89186321BD00D89CC7 /* DSTSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6243BB88186321BD00D89CC7 /* DSTSignInViewController.m */; };
+		62AECBB818647ACB000C6204 /* DSTMiddleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AECBB718647ACB000C6204 /* DSTMiddleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		6243BB7D18631DA800D89CC7 /* SignInTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInTests.m; sourceTree = "<group>"; };
 		6243BB87186321BD00D89CC7 /* DSTSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTSignInViewController.h; sourceTree = "<group>"; };
 		6243BB88186321BD00D89CC7 /* DSTSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTSignInViewController.m; sourceTree = "<group>"; };
+		62AECBB618647ACB000C6204 /* DSTMiddleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTMiddleViewController.h; sourceTree = "<group>"; };
+		62AECBB718647ACB000C6204 /* DSTMiddleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTMiddleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				6243BB5918631DA800D89CC7 /* Supporting Files */,
 				6243BB87186321BD00D89CC7 /* DSTSignInViewController.h */,
 				6243BB88186321BD00D89CC7 /* DSTSignInViewController.m */,
+				62AECBB618647ACB000C6204 /* DSTMiddleViewController.h */,
+				62AECBB718647ACB000C6204 /* DSTMiddleViewController.m */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62AECBB818647ACB000C6204 /* DSTMiddleViewController.m in Sources */,
 				6243BB6318631DA800D89CC7 /* DSTAppDelegate.m in Sources */,
 				6243BB6918631DA800D89CC7 /* DSTViewController.m in Sources */,
 				6243BB89186321BD00D89CC7 /* DSTSignInViewController.m in Sources */,
@@ -467,6 +473,7 @@
 				6243BB8318631DA800D89CC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6243BB8418631DA900D89CC7 /* Build configuration list for PBXNativeTarget "SignInTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +482,7 @@
 				6243BB8618631DA900D89CC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

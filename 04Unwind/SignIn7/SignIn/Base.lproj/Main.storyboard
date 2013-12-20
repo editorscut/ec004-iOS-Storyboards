@@ -30,7 +30,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aTG-uo-d9S" kind="modal" id="nv9-dg-hI7"/>
+                                    <segue destination="ddc-8c-MLA" kind="modal" id="D2j-3P-F1I"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -49,7 +49,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="580" y="21"/>
+            <point key="canvasLocation" x="537" y="21"/>
+        </scene>
+        <!--Middle View Controller-->
+        <scene sceneID="sAJ-hR-CJC">
+            <objects>
+                <viewController id="ddc-8c-MLA" customClass="DSTMiddleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WZi-Ld-j7b"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ee-na-PGJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OKL-no-NSW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMd-GD-rBw">
+                                <rect key="frame" x="120" y="269" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Keep Going">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aTG-uo-d9S" kind="modal" id="glz-OH-LQp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="bMd-GD-rBw" secondAttribute="centerX" id="aJ2-eA-428"/>
+                            <constraint firstAttribute="centerY" secondItem="bMd-GD-rBw" secondAttribute="centerY" id="hKq-Si-Mnl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cI3-x3-BrG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991" y="21"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="JKy-Q0-VIE">
@@ -111,7 +145,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ip-FG-iWY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Hhi-tS-Ilm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1016" y="21"/>
+            <point key="canvasLocation" x="1430" y="21"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
