@@ -10,7 +10,6 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue
                  sender:(id)sender {
     if ([segue.identifier isEqualToString:@"completeSignIn"]) {
-        self.signInName = self.signInField.text;
     }
 }
 - (void)viewWillAppear:(BOOL)animated {

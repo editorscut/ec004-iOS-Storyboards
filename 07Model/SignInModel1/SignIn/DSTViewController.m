@@ -1,5 +1,4 @@
 #import "DSTViewController.h"
-#import "DSTSignInViewController.h"
 
 @interface DSTViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *greetingLabel;
@@ -12,8 +11,7 @@
 }
 - (IBAction)completeSignIn:(UIStoryboardSegue *)segue {
     NSLog(@"completeSignIn: in DSTViewController");
-    DSTSignInViewController *signInVC = segue.sourceViewController;
-    self.greetingLabel.text = signInVC.signInName;
+    
 }
 
 @end
