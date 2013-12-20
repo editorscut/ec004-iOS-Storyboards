@@ -1,17 +1,14 @@
 #import "DSTViewController.h"
-#import "DSTSignInViewController.h"
 #import "DSTGuest.h"
 
 @interface DSTViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *greetingLabel;
-@property (strong, nonatomic) DSTGuest *model;
 @end
 
 @implementation DSTViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.model = [[DSTGuest alloc] init];
 }
 
 - (IBAction)cancelSignIn:(UIStoryboardSegue *)segue {
@@ -19,12 +16,8 @@
 }
 - (IBAction)completeSignIn:(UIStoryboardSegue *)segue {
     NSLog(@"completeSignIn: in DSTViewController");
-    self.greetingLabel.text = self.model.signInName;
-}
-- (void)prepareForSegue:(UIStoryboardSegue *)segue
-                 sender:(id)sender {
-    DSTSignInViewController *signInVC = segue.destinationViewController;
-    signInVC.model = self.model;
+    DSTGuest *guest = [DSTGuest sharedGuest];
+    self.greetingLabel.text = guest.signInName;
 }
 
 @end
