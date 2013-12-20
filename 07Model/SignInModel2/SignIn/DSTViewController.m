@@ -1,4 +1,5 @@
 #import "DSTViewController.h"
+#import "DSTSignInViewController.h"
 
 @interface DSTViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *greetingLabel;
