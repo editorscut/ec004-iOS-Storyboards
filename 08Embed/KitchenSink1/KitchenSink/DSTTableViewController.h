@@ -1,5 +1,5 @@
 //
-//  DSTViewController.h
+//  DSTTableViewController.h
 //  KitchenSink
 //
 //  Created by Daniel Steinberg on 12/21/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DSTViewController : UIViewController
+@interface DSTTableViewController : UITableViewController
 
 @end
