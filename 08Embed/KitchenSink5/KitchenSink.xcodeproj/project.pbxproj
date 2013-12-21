@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		622725471865FACA00CAB37C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622725461865FACA00CAB37C /* Foundation.framework */; };
+		622725491865FACA00CAB37C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622725481865FACA00CAB37C /* CoreGraphics.framework */; };
+		6227254B1865FACA00CAB37C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6227254A1865FACA00CAB37C /* UIKit.framework */; };
+		622725511865FACA00CAB37C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6227254F1865FACA00CAB37C /* InfoPlist.strings */; };
+		622725531865FACA00CAB37C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 622725521865FACA00CAB37C /* main.m */; };
+		622725571865FACA00CAB37C /* DSTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 622725561865FACA00CAB37C /* DSTAppDelegate.m */; };
+		6227255A1865FACA00CAB37C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622725581865FACA00CAB37C /* Main.storyboard */; };
+		6227255F1865FACA00CAB37C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6227255E1865FACA00CAB37C /* Images.xcassets */; };
+		622725661865FACA00CAB37C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622725651865FACA00CAB37C /* XCTest.framework */; };
+		622725671865FACA00CAB37C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622725461865FACA00CAB37C /* Foundation.framework */; };
+		622725681865FACA00CAB37C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6227254A1865FACA00CAB37C /* UIKit.framework */; };
+		622725701865FACA00CAB37C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6227256E1865FACA00CAB37C /* InfoPlist.strings */; };
+		622725721865FACA00CAB37C /* KitchenSinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 622725711865FACA00CAB37C /* KitchenSinkTests.m */; };
+		626863DF1865FEFF009E5EB3 /* DSTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 626863DE1865FEFF009E5EB3 /* DSTTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		622725691865FACA00CAB37C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6227253B1865FACA00CAB37C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 622725421865FACA00CAB37C;
+			remoteInfo = KitchenSink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		622725431865FACA00CAB37C /* KitchenSink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitchenSink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		622725461865FACA00CAB37C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		622725481865FACA00CAB37C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6227254A1865FACA00CAB37C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6227254E1865FACA00CAB37C /* KitchenSink-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KitchenSink-Info.plist"; sourceTree = "<group>"; };
+		622725501865FACA00CAB37C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		622725521865FACA00CAB37C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		622725541865FACA00CAB37C /* KitchenSink-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KitchenSink-Prefix.pch"; sourceTree = "<group>"; };
+		622725551865FACA00CAB37C /* DSTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSTAppDelegate.h; sourceTree = "<group>"; };
+		622725561865FACA00CAB37C /* DSTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSTAppDelegate.m; sourceTree = "<group>"; };
+		622725591865FACA00CAB37C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6227255E1865FACA00CAB37C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		622725641865FACA00CAB37C /* KitchenSinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KitchenSinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		622725651865FACA00CAB37C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6227256D1865FACA00CAB37C /* KitchenSinkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KitchenSinkTests-Info.plist"; sourceTree = "<group>"; };
+		6227256F1865FACA00CAB37C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		622725711865FACA00CAB37C /* KitchenSinkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KitchenSinkTests.m; sourceTree = "<group>"; };
+		626863DD1865FEFF009E5EB3 /* DSTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTTableViewController.h; sourceTree = "<group>"; };
+		626863DE1865FEFF009E5EB3 /* DSTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		622725401865FACA00CAB37C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622725491865FACA00CAB37C /* CoreGraphics.framework in Frameworks */,
+				6227254B1865FACA00CAB37C /* UIKit.framework in Frameworks */,
+				622725471865FACA00CAB37C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622725611865FACA00CAB37C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622725661865FACA00CAB37C /* XCTest.framework in Frameworks */,
+				622725681865FACA00CAB37C /* UIKit.framework in Frameworks */,
+				622725671865FACA00CAB37C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6227253A1865FACA00CAB37C = {
+			isa = PBXGroup;
+			children = (
+				6227254C1865FACA00CAB37C /* KitchenSink */,
+				6227256B1865FACA00CAB37C /* KitchenSinkTests */,
+				622725451865FACA00CAB37C /* Frameworks */,
+				622725441865FACA00CAB37C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		622725441865FACA00CAB37C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				622725431865FACA00CAB37C /* KitchenSink.app */,
+				622725641865FACA00CAB37C /* KitchenSinkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		622725451865FACA00CAB37C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				622725461865FACA00CAB37C /* Foundation.framework */,
+				622725481865FACA00CAB37C /* CoreGraphics.framework */,
+				6227254A1865FACA00CAB37C /* UIKit.framework */,
+				622725651865FACA00CAB37C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6227254C1865FACA00CAB37C /* KitchenSink */ = {
+			isa = PBXGroup;
+			children = (
+				622725551865FACA00CAB37C /* DSTAppDelegate.h */,
+				622725561865FACA00CAB37C /* DSTAppDelegate.m */,
+				622725581865FACA00CAB37C /* Main.storyboard */,
+				6227255E1865FACA00CAB37C /* Images.xcassets */,
+				6227254D1865FACA00CAB37C /* Supporting Files */,
+				626863DD1865FEFF009E5EB3 /* DSTTableViewController.h */,
+				626863DE1865FEFF009E5EB3 /* DSTTableViewController.m */,
+			);
+			path = KitchenSink;
+			sourceTree = "<group>";
+		};
+		6227254D1865FACA00CAB37C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6227254E1865FACA00CAB37C /* KitchenSink-Info.plist */,
+				6227254F1865FACA00CAB37C /* InfoPlist.strings */,
+				622725521865FACA00CAB37C /* main.m */,
+				622725541865FACA00CAB37C /* KitchenSink-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6227256B1865FACA00CAB37C /* KitchenSinkTests */ = {
+			isa = PBXGroup;
+			children = (
+				622725711865FACA00CAB37C /* KitchenSinkTests.m */,
+				6227256C1865FACA00CAB37C /* Supporting Files */,
+			);
+			path = KitchenSinkTests;
+			sourceTree = "<group>";
+		};
+		6227256C1865FACA00CAB37C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6227256D1865FACA00CAB37C /* KitchenSinkTests-Info.plist */,
+				6227256E1865FACA00CAB37C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		622725421865FACA00CAB37C /* KitchenSink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 622725751865FACA00CAB37C /* Build configuration list for PBXNativeTarget "KitchenSink" */;
+			buildPhases = (
+				6227253F1865FACA00CAB37C /* Sources */,
+				622725401865FACA00CAB37C /* Frameworks */,
+				622725411865FACA00CAB37C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KitchenSink;
+			productName = KitchenSink;
+			productReference = 622725431865FACA00CAB37C /* KitchenSink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		622725631865FACA00CAB37C /* KitchenSinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 622725781865FACA00CAB37C /* Build configuration list for PBXNativeTarget "KitchenSinkTests" */;
+			buildPhases = (
+				622725601865FACA00CAB37C /* Sources */,
+				622725611865FACA00CAB37C /* Frameworks */,
+				622725621865FACA00CAB37C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6227256A1865FACA00CAB37C /* PBXTargetDependency */,
+			);
+			name = KitchenSinkTests;
+			productName = KitchenSinkTests;
+			productReference = 622725641865FACA00CAB37C /* KitchenSinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6227253B1865FACA00CAB37C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DST;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Dim Sum Thinking";
+				TargetAttributes = {
+					622725631865FACA00CAB37C = {
+						TestTargetID = 622725421865FACA00CAB37C;
+					};
+				};
+			};
+			buildConfigurationList = 6227253E1865FACA00CAB37C /* Build configuration list for PBXProject "KitchenSink" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6227253A1865FACA00CAB37C;
+			productRefGroup = 622725441865FACA00CAB37C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				622725421865FACA00CAB37C /* KitchenSink */,
+				622725631865FACA00CAB37C /* KitchenSinkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		622725411865FACA00CAB37C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6227255F1865FACA00CAB37C /* Images.xcassets in Resources */,
+				622725511865FACA00CAB37C /* InfoPlist.strings in Resources */,
+				6227255A1865FACA00CAB37C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622725621865FACA00CAB37C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622725701865FACA00CAB37C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6227253F1865FACA00CAB37C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622725571865FACA00CAB37C /* DSTAppDelegate.m in Sources */,
+				626863DF1865FEFF009E5EB3 /* DSTTableViewController.m in Sources */,
+				622725531865FACA00CAB37C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622725601865FACA00CAB37C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622725721865FACA00CAB37C /* KitchenSinkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6227256A1865FACA00CAB37C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 622725421865FACA00CAB37C /* KitchenSink */;
+			targetProxy = 622725691865FACA00CAB37C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6227254F1865FACA00CAB37C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				622725501865FACA00CAB37C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		622725581865FACA00CAB37C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				622725591865FACA00CAB37C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6227256E1865FACA00CAB37C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6227256F1865FACA00CAB37C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		622725731865FACA00CAB37C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		622725741865FACA00CAB37C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		622725761865FACA00CAB37C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KitchenSink/KitchenSink-Prefix.pch";
+				INFOPLIST_FILE = "KitchenSink/KitchenSink-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		622725771865FACA00CAB37C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KitchenSink/KitchenSink-Prefix.pch";
+				INFOPLIST_FILE = "KitchenSink/KitchenSink-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		622725791865FACA00CAB37C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KitchenSink.app/KitchenSink";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KitchenSink/KitchenSink-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KitchenSinkTests/KitchenSinkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6227257A1865FACA00CAB37C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KitchenSink.app/KitchenSink";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KitchenSink/KitchenSink-Prefix.pch";
+				INFOPLIST_FILE = "KitchenSinkTests/KitchenSinkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6227253E1865FACA00CAB37C /* Build configuration list for PBXProject "KitchenSink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				622725731865FACA00CAB37C /* Debug */,
+				622725741865FACA00CAB37C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		622725751865FACA00CAB37C /* Build configuration list for PBXNativeTarget "KitchenSink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				622725761865FACA00CAB37C /* Debug */,
+				622725771865FACA00CAB37C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		622725781865FACA00CAB37C /* Build configuration list for PBXNativeTarget "KitchenSinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				622725791865FACA00CAB37C /* Debug */,
+				6227257A1865FACA00CAB37C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6227253B1865FACA00CAB37C /* Project object */;
+}
