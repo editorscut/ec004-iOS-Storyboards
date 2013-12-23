@@ -21,6 +21,9 @@
 		622725701865FACA00CAB37C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6227256E1865FACA00CAB37C /* InfoPlist.strings */; };
 		622725721865FACA00CAB37C /* KitchenSinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 622725711865FACA00CAB37C /* KitchenSinkTests.m */; };
 		626863DF1865FEFF009E5EB3 /* DSTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 626863DE1865FEFF009E5EB3 /* DSTTableViewController.m */; };
+		627A4FAE1867CF1800E8B62C /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627A4FA91867CF1800E8B62C /* SignIn.storyboard */; };
+		627A4FAF1867CF1800E8B62C /* DSTSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 627A4FAB1867CF1800E8B62C /* DSTSignInViewController.m */; };
+		627A4FB01867CF1800E8B62C /* DSTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 627A4FAD1867CF1800E8B62C /* DSTViewController.m */; };
 		62F905DA18666106002A5E48 /* DSTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F905D918666106002A5E48 /* DSTDetailViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,11 @@
 		622725711865FACA00CAB37C /* KitchenSinkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KitchenSinkTests.m; sourceTree = "<group>"; };
 		626863DD1865FEFF009E5EB3 /* DSTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTTableViewController.h; sourceTree = "<group>"; };
 		626863DE1865FEFF009E5EB3 /* DSTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTTableViewController.m; sourceTree = "<group>"; };
+		627A4FA91867CF1800E8B62C /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		627A4FAA1867CF1800E8B62C /* DSTSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTSignInViewController.h; sourceTree = "<group>"; };
+		627A4FAB1867CF1800E8B62C /* DSTSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTSignInViewController.m; sourceTree = "<group>"; };
+		627A4FAC1867CF1800E8B62C /* DSTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTViewController.h; sourceTree = "<group>"; };
+		627A4FAD1867CF1800E8B62C /* DSTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTViewController.m; sourceTree = "<group>"; };
 		62F905D818666106002A5E48 /* DSTDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTDetailViewController.h; sourceTree = "<group>"; };
 		62F905D918666106002A5E48 /* DSTDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,15 +123,14 @@
 		6227254C1865FACA00CAB37C /* KitchenSink */ = {
 			isa = PBXGroup;
 			children = (
-				622725551865FACA00CAB37C /* DSTAppDelegate.h */,
-				622725561865FACA00CAB37C /* DSTAppDelegate.m */,
-				622725581865FACA00CAB37C /* Main.storyboard */,
+				627A4FB21868640B00E8B62C /* App Delegate */,
+				627A4FB11868640000E8B62C /* Storyboards */,
+				627A4FB61868644B00E8B62C /* Sign In View Controller */,
+				627A4FB51868643F00E8B62C /* View Controller */,
+				627A4FB31868642200E8B62C /* Table View Controller */,
+				627A4FB41868643100E8B62C /* Detail View Controller */,
 				6227255E1865FACA00CAB37C /* Images.xcassets */,
 				6227254D1865FACA00CAB37C /* Supporting Files */,
-				626863DD1865FEFF009E5EB3 /* DSTTableViewController.h */,
-				626863DE1865FEFF009E5EB3 /* DSTTableViewController.m */,
-				62F905D818666106002A5E48 /* DSTDetailViewController.h */,
-				62F905D918666106002A5E48 /* DSTDetailViewController.m */,
 			);
 			path = KitchenSink;
 			sourceTree = "<group>";
@@ -155,6 +162,60 @@
 				6227256E1865FACA00CAB37C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		627A4FB11868640000E8B62C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				627A4FA91867CF1800E8B62C /* SignIn.storyboard */,
+				622725581865FACA00CAB37C /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		627A4FB21868640B00E8B62C /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				622725551865FACA00CAB37C /* DSTAppDelegate.h */,
+				622725561865FACA00CAB37C /* DSTAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		627A4FB31868642200E8B62C /* Table View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				626863DD1865FEFF009E5EB3 /* DSTTableViewController.h */,
+				626863DE1865FEFF009E5EB3 /* DSTTableViewController.m */,
+			);
+			name = "Table View Controller";
+			sourceTree = "<group>";
+		};
+		627A4FB41868643100E8B62C /* Detail View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				62F905D818666106002A5E48 /* DSTDetailViewController.h */,
+				62F905D918666106002A5E48 /* DSTDetailViewController.m */,
+			);
+			name = "Detail View Controller";
+			sourceTree = "<group>";
+		};
+		627A4FB51868643F00E8B62C /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				627A4FAC1867CF1800E8B62C /* DSTViewController.h */,
+				627A4FAD1867CF1800E8B62C /* DSTViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		627A4FB61868644B00E8B62C /* Sign In View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				627A4FAA1867CF1800E8B62C /* DSTSignInViewController.h */,
+				627A4FAB1867CF1800E8B62C /* DSTSignInViewController.m */,
+			);
+			name = "Sign In View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627A4FAE1867CF1800E8B62C /* SignIn.storyboard in Resources */,
 				6227255F1865FACA00CAB37C /* Images.xcassets in Resources */,
 				622725511865FACA00CAB37C /* InfoPlist.strings in Resources */,
 				6227255A1865FACA00CAB37C /* Main.storyboard in Resources */,
@@ -258,6 +320,8 @@
 				622725571865FACA00CAB37C /* DSTAppDelegate.m in Sources */,
 				62F905DA18666106002A5E48 /* DSTDetailViewController.m in Sources */,
 				626863DF1865FEFF009E5EB3 /* DSTTableViewController.m in Sources */,
+				627A4FAF1867CF1800E8B62C /* DSTSignInViewController.m in Sources */,
+				627A4FB01867CF1800E8B62C /* DSTViewController.m in Sources */,
 				622725531865FACA00CAB37C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
