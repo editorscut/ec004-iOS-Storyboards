@@ -1,0 +1,15 @@
+
+/* Class = "IBUIButton"; normalTitle = "Sign In"; ObjectID = "0k5-8X-HkV"; */
+"0k5-8X-HkV.normalTitle" = "Register";
+
+/* Class = "IBUITextField"; placeholder = "Sign in Please"; ObjectID = "6if-EQ-wOA"; */
+"6if-EQ-wOA.placeholder" = "Register Please";
+
+/* Class = "IBUIButton"; normalTitle = "Save"; ObjectID = "d90-uU-6MU"; */
+"d90-uU-6MU.normalTitle" = "Save";
+
+/* Class = "IBUILabel"; text = "Welcome"; ObjectID = "fDp-Ys-R9x"; */
+"fDp-Ys-R9x.text" = "Welcome";
+
+/* Class = "IBUIButton"; normalTitle = "Cancel"; ObjectID = "wNI-K6-oGU"; */
+"wNI-K6-oGU.normalTitle" = "Cancel";

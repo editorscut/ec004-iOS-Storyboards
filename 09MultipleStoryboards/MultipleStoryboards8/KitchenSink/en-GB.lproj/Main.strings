@@ -1,0 +1,42 @@
+
+/* Class = "IBUIButton"; normalTitle = "Save"; ObjectID = "0oU-fR-wDU"; */
+"0oU-fR-wDU.normalTitle" = "Save";
+
+/* Class = "IBUITextField"; placeholder = "Sign in Please"; ObjectID = "2TW-yk-u3k"; */
+"2TW-yk-u3k.placeholder" = "Register Please";
+
+/* Class = "IBUILabel"; text = "Welcome"; ObjectID = "9kH-Ds-PNe"; */
+"9kH-Ds-PNe.text" = "Welcome";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "Ffk-jt-4r8"; */
+"Ffk-jt-4r8.text" = "Subtitle";
+
+/* Class = "IBUITabBarItem"; title = "Greetings"; ObjectID = "I0U-Oy-Ppa"; */
+"I0U-Oy-Ppa.title" = "Niceties";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "Jhv-e5-CGe"; */
+"Jhv-e5-CGe.text" = "Title";
+
+/* Class = "IBUITabBarItem"; title = "Sign In"; ObjectID = "YD5-CM-3ST"; */
+"YD5-CM-3ST.title" = "Register";
+
+/* Class = "IBUITabBarItem"; title = "Blue Mood"; ObjectID = "YEd-15-szc"; */
+"YEd-15-szc.title" = "Blue Mood";
+
+/* Class = "IBUIBarButtonItem"; title = "Next"; ObjectID = "YLK-Dk-2hq"; */
+"YLK-Dk-2hq.title" = "Next";
+
+/* Class = "IBUIButton"; normalTitle = "Sign In"; ObjectID = "aaL-Z3-sMx"; */
+"aaL-Z3-sMx.normalTitle" = "Register";
+
+/* Class = "IBUIButton"; normalTitle = "Sign In"; ObjectID = "cAZ-Yd-osi"; */
+"cAZ-Yd-osi.normalTitle" = "Register";
+
+/* Class = "IBUINavigationItem"; title = "Greetings"; ObjectID = "oYw-Nw-GDW"; */
+"oYw-Nw-GDW.title" = "Niceties";
+
+/* Class = "IBUIButton"; normalTitle = "Cancel"; ObjectID = "t8o-CV-mBq"; */
+"t8o-CV-mBq.normalTitle" = "Cancel";
+
+/* Class = "IBUILabel"; text = "Welcome"; ObjectID = "zvU-0i-U3a"; */
+"zvU-0i-U3a.text" = "Welcome";

@@ -21,7 +21,7 @@
 		622725701865FACA00CAB37C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6227256E1865FACA00CAB37C /* InfoPlist.strings */; };
 		622725721865FACA00CAB37C /* KitchenSinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 622725711865FACA00CAB37C /* KitchenSinkTests.m */; };
 		626863DF1865FEFF009E5EB3 /* DSTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 626863DE1865FEFF009E5EB3 /* DSTTableViewController.m */; };
-		627A4FAE1867CF1800E8B62C /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627A4FA91867CF1800E8B62C /* SignIn.storyboard */; };
+		6269877F186B4858006906CE /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62698781186B4858006906CE /* SignIn.storyboard */; };
 		627A4FAF1867CF1800E8B62C /* DSTSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 627A4FAB1867CF1800E8B62C /* DSTSignInViewController.m */; };
 		627A4FB01867CF1800E8B62C /* DSTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 627A4FAD1867CF1800E8B62C /* DSTViewController.m */; };
 		62F905DA18666106002A5E48 /* DSTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F905D918666106002A5E48 /* DSTDetailViewController.m */; };
@@ -57,7 +57,11 @@
 		622725711865FACA00CAB37C /* KitchenSinkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KitchenSinkTests.m; sourceTree = "<group>"; };
 		626863DD1865FEFF009E5EB3 /* DSTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTTableViewController.h; sourceTree = "<group>"; };
 		626863DE1865FEFF009E5EB3 /* DSTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTTableViewController.m; sourceTree = "<group>"; };
-		627A4FA91867CF1800E8B62C /* SignIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		6269877C186B415D006906CE /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Main.strings"; sourceTree = "<group>"; };
+		6269877D186B415D006906CE /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		6269877E186B415D006906CE /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		62698780186B4858006906CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SignIn.storyboard; sourceTree = "<group>"; };
+		62698783186B4860006906CE /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/SignIn.strings"; sourceTree = "<group>"; };
 		627A4FAA1867CF1800E8B62C /* DSTSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTSignInViewController.h; sourceTree = "<group>"; };
 		627A4FAB1867CF1800E8B62C /* DSTSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTSignInViewController.m; sourceTree = "<group>"; };
 		627A4FAC1867CF1800E8B62C /* DSTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTViewController.h; sourceTree = "<group>"; };
@@ -167,7 +171,7 @@
 		627A4FB11868640000E8B62C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				627A4FA91867CF1800E8B62C /* SignIn.storyboard */,
+				62698781186B4858006906CE /* SignIn.storyboard */,
 				622725581865FACA00CAB37C /* Main.storyboard */,
 			);
 			name = Storyboards;
@@ -278,6 +282,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"en-GB",
 			);
 			mainGroup = 6227253A1865FACA00CAB37C;
 			productRefGroup = 622725441865FACA00CAB37C /* Products */;
@@ -295,7 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				627A4FAE1867CF1800E8B62C /* SignIn.storyboard in Resources */,
+				6269877F186B4858006906CE /* SignIn.storyboard in Resources */,
 				6227255F1865FACA00CAB37C /* Images.xcassets in Resources */,
 				622725511865FACA00CAB37C /* InfoPlist.strings in Resources */,
 				6227255A1865FACA00CAB37C /* Main.storyboard in Resources */,
@@ -349,6 +354,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				622725501865FACA00CAB37C /* en */,
+				6269877D186B415D006906CE /* en-GB */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -357,6 +363,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				622725591865FACA00CAB37C /* Base */,
+				6269877C186B415D006906CE /* en-GB */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -365,8 +372,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				6227256F1865FACA00CAB37C /* en */,
+				6269877E186B415D006906CE /* en-GB */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		62698781186B4858006906CE /* SignIn.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62698780186B4858006906CE /* Base */,
+				62698783186B4860006906CE /* en-GB */,
+			);
+			name = SignIn.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
