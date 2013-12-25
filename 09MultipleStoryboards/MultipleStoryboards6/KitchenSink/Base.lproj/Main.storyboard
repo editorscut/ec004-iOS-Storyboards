@@ -183,6 +183,114 @@
             </objects>
             <point key="canvasLocation" x="-1387" y="353"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="c5S-vl-4qw">
+            <objects>
+                <viewController id="GF7-Va-LHe" customClass="DSTViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WgW-R8-Mks"/>
+                        <viewControllerLayoutGuide type="bottom" id="W2K-aO-D5y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MBn-fg-WPA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kH-Ds-PNe">
+                                <rect key="frame" x="20" y="28" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaL-Z3-sMx">
+                                <rect key="frame" x="136" y="225" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZfD-G9-GWl" kind="modal" id="PxX-Dj-KR1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="aaL-Z3-sMx" secondAttribute="centerX" id="0kq-KR-E3a"/>
+                            <constraint firstItem="9kH-Ds-PNe" firstAttribute="top" secondItem="WgW-R8-Mks" secondAttribute="bottom" constant="20" symbolic="YES" id="NeJ-ky-0qt"/>
+                            <constraint firstAttribute="trailing" secondItem="9kH-Ds-PNe" secondAttribute="trailing" constant="20" symbolic="YES" id="ilo-qt-JvH"/>
+                            <constraint firstItem="9kH-Ds-PNe" firstAttribute="leading" secondItem="MBn-fg-WPA" secondAttribute="leading" constant="20" symbolic="YES" id="sAR-WH-dbY"/>
+                            <constraint firstAttribute="centerY" secondItem="aaL-Z3-sMx" secondAttribute="centerY" id="zJ7-Hi-aqG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="9kH-Ds-PNe" id="qCr-kq-rGj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ndc-xJ-wKM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-145" y="990"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="ReD-oh-NUu">
+            <objects>
+                <viewController storyboardIdentifier="SignInScene" id="ZfD-G9-GWl" customClass="DSTSignInViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rd0-4a-QFX"/>
+                        <viewControllerLayoutGuide type="bottom" id="v3E-8D-Uzu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0eq-JZ-ZZl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sign in Please" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2TW-yk-u3k">
+                                <rect key="frame" x="20" y="28" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ZfD-G9-GWl" id="qmU-Jv-Ebv"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8o-CV-mBq">
+                                <rect key="frame" x="56" y="108" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="ZfD-G9-GWl" eventType="touchUpInside" id="JTA-dN-n8v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oU-fR-wDU">
+                                <rect key="frame" x="223" y="108" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="ZfD-G9-GWl" eventType="touchUpInside" id="fHh-f2-oew"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2TW-yk-u3k" firstAttribute="top" secondItem="Rd0-4a-QFX" secondAttribute="bottom" constant="20" symbolic="YES" id="7cp-LB-3u8"/>
+                            <constraint firstAttribute="trailing" secondItem="2TW-yk-u3k" secondAttribute="trailing" constant="20" symbolic="YES" id="8UP-Hh-2XM"/>
+                            <constraint firstItem="2TW-yk-u3k" firstAttribute="leading" secondItem="0eq-JZ-ZZl" secondAttribute="leading" constant="20" symbolic="YES" id="Uh3-to-7pQ"/>
+                            <constraint firstAttribute="centerX" secondItem="t8o-CV-mBq" secondAttribute="centerX" constant="80" id="ab1-IV-5yJ"/>
+                            <constraint firstAttribute="centerX" secondItem="0oU-fR-wDU" secondAttribute="centerX" constant="-80" id="imc-5j-VLi"/>
+                            <constraint firstItem="t8o-CV-mBq" firstAttribute="top" secondItem="0oU-fR-wDU" secondAttribute="top" id="lDD-Xb-cuW"/>
+                            <constraint firstItem="t8o-CV-mBq" firstAttribute="top" secondItem="2TW-yk-u3k" secondAttribute="bottom" constant="50" id="yqm-24-orB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="signInField" destination="2TW-yk-u3k" id="wBe-Vk-eh7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VQ4-bu-hVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306" y="990"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
