@@ -11,10 +11,10 @@
 
 @implementation DSTEvent
 
+@dynamic duration;
+@dynamic endTIme;
+@dynamic eventDescription;
 @dynamic timeStamp;
 @dynamic title;
-@dynamic eventDescription;
-@dynamic endTIme;
-@dynamic duration;
 
 @end

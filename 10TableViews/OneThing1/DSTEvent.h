@@ -12,10 +12,10 @@
 
 @interface DSTEvent : NSManagedObject
 
+@property (nonatomic, retain) NSNumber * duration;
+@property (nonatomic, retain) NSDate * endTIme;
+@property (nonatomic, retain) NSString * eventDescription;
 @property (nonatomic, retain) NSDate * timeStamp;
 @property (nonatomic, retain) NSString * title;
-@property (nonatomic, retain) NSString * eventDescription;
-@property (nonatomic, retain) UNKNOWN_TYPE endTIme;
-@property (nonatomic, retain) NSNumber * duration;
 
 @end

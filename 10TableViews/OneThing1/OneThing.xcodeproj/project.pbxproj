@@ -26,7 +26,7 @@
 		62244058186DA6B500210BDF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62244030186DA6B400210BDF /* CoreData.framework */; };
 		62244060186DA6B500210BDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6224405E186DA6B500210BDF /* InfoPlist.strings */; };
 		62244062186DA6B500210BDF /* OneThingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62244061186DA6B500210BDF /* OneThingTests.m */; };
-		6224406D186DA8DA00210BDF /* DSTEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6224406C186DA8DA00210BDF /* DSTEvent.m */; };
+		62244070186DA98C00210BDF /* DSTEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6224406F186DA98C00210BDF /* DSTEvent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +64,8 @@
 		6224405D186DA6B500210BDF /* OneThingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OneThingTests-Info.plist"; sourceTree = "<group>"; };
 		6224405F186DA6B500210BDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		62244061186DA6B500210BDF /* OneThingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneThingTests.m; sourceTree = "<group>"; };
-		6224406B186DA8DA00210BDF /* DSTEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTEvent.h; sourceTree = "<group>"; };
-		6224406C186DA8DA00210BDF /* DSTEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTEvent.m; sourceTree = "<group>"; };
+		6224406E186DA98C00210BDF /* DSTEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTEvent.h; sourceTree = "<group>"; };
+		6224406F186DA98C00210BDF /* DSTEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTEvent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				62244032186DA6B400210BDF /* OneThing */,
+				6224406E186DA98C00210BDF /* DSTEvent.h */,
+				6224406F186DA98C00210BDF /* DSTEvent.m */,
 				6224405B186DA6B500210BDF /* OneThingTests */,
 				62244029186DA6B400210BDF /* Frameworks */,
 				62244028186DA6B400210BDF /* Products */,
@@ -138,8 +140,6 @@
 				6224404B186DA6B500210BDF /* DSTDetailViewController.m */,
 				6224404D186DA6B500210BDF /* Images.xcassets */,
 				62244044186DA6B400210BDF /* OneThing.xcdatamodeld */,
-				6224406B186DA8DA00210BDF /* DSTEvent.h */,
-				6224406C186DA8DA00210BDF /* DSTEvent.m */,
 				62244033186DA6B400210BDF /* Supporting Files */,
 			);
 			path = OneThing;
@@ -273,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6224406D186DA8DA00210BDF /* DSTEvent.m in Sources */,
+				62244070186DA98C00210BDF /* DSTEvent.m in Sources */,
 				6224403D186DA6B400210BDF /* DSTAppDelegate.m in Sources */,
 				62244046186DA6B400210BDF /* OneThing.xcdatamodeld in Sources */,
 				62244049186DA6B400210BDF /* DSTMasterViewController.m in Sources */,
@@ -497,6 +497,7 @@
 				62244067186DA6B500210BDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62244068186DA6B500210BDF /* Build configuration list for PBXNativeTarget "OneThingTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +506,7 @@
 				6224406A186DA6B500210BDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
