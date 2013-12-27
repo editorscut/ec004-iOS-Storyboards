@@ -64,8 +64,8 @@
 		6224405D186DA6B500210BDF /* OneThingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OneThingTests-Info.plist"; sourceTree = "<group>"; };
 		6224405F186DA6B500210BDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		62244061186DA6B500210BDF /* OneThingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneThingTests.m; sourceTree = "<group>"; };
-		6224406E186DA98C00210BDF /* DSTEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTEvent.h; sourceTree = "<group>"; };
-		6224406F186DA98C00210BDF /* DSTEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTEvent.m; sourceTree = "<group>"; };
+		6224406E186DA98C00210BDF /* DSTEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSTEvent.h; path = ../DSTEvent.h; sourceTree = "<group>"; };
+		6224406F186DA98C00210BDF /* DSTEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSTEvent.m; path = ../DSTEvent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				62244032186DA6B400210BDF /* OneThing */,
-				6224406E186DA98C00210BDF /* DSTEvent.h */,
-				6224406F186DA98C00210BDF /* DSTEvent.m */,
 				6224405B186DA6B500210BDF /* OneThingTests */,
 				62244029186DA6B400210BDF /* Frameworks */,
 				62244028186DA6B400210BDF /* Products */,
@@ -130,16 +128,11 @@
 		62244032186DA6B400210BDF /* OneThing */ = {
 			isa = PBXGroup;
 			children = (
-				6224403B186DA6B400210BDF /* DSTAppDelegate.h */,
-				6224403C186DA6B400210BDF /* DSTAppDelegate.m */,
-				6224403E186DA6B400210BDF /* Main_iPhone.storyboard */,
-				62244041186DA6B400210BDF /* Main_iPad.storyboard */,
-				62244047186DA6B400210BDF /* DSTMasterViewController.h */,
-				62244048186DA6B400210BDF /* DSTMasterViewController.m */,
-				6224404A186DA6B400210BDF /* DSTDetailViewController.h */,
-				6224404B186DA6B500210BDF /* DSTDetailViewController.m */,
-				6224404D186DA6B500210BDF /* Images.xcassets */,
-				62244044186DA6B400210BDF /* OneThing.xcdatamodeld */,
+				62244073186DA9DD00210BDF /* Startup */,
+				62244072186DA9D300210BDF /* Storyboards */,
+				62244074186DA9E900210BDF /* Master View */,
+				62244075186DA9F200210BDF /* Detail View */,
+				62244071186DA9C900210BDF /* Model */,
 				62244033186DA6B400210BDF /* Supporting Files */,
 			);
 			path = OneThing;
@@ -148,6 +141,7 @@
 		62244033186DA6B400210BDF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6224404D186DA6B500210BDF /* Images.xcassets */,
 				62244034186DA6B400210BDF /* OneThing-Info.plist */,
 				62244035186DA6B400210BDF /* InfoPlist.strings */,
 				62244038186DA6B400210BDF /* main.m */,
@@ -172,6 +166,52 @@
 				6224405E186DA6B500210BDF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62244071186DA9C900210BDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6224406E186DA98C00210BDF /* DSTEvent.h */,
+				6224406F186DA98C00210BDF /* DSTEvent.m */,
+				62244044186DA6B400210BDF /* OneThing.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		62244072186DA9D300210BDF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6224403E186DA6B400210BDF /* Main_iPhone.storyboard */,
+				62244041186DA6B400210BDF /* Main_iPad.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		62244073186DA9DD00210BDF /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				6224403B186DA6B400210BDF /* DSTAppDelegate.h */,
+				6224403C186DA6B400210BDF /* DSTAppDelegate.m */,
+			);
+			name = Startup;
+			sourceTree = "<group>";
+		};
+		62244074186DA9E900210BDF /* Master View */ = {
+			isa = PBXGroup;
+			children = (
+				62244047186DA6B400210BDF /* DSTMasterViewController.h */,
+				62244048186DA6B400210BDF /* DSTMasterViewController.m */,
+			);
+			name = "Master View";
+			sourceTree = "<group>";
+		};
+		62244075186DA9F200210BDF /* Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				6224404A186DA6B400210BDF /* DSTDetailViewController.h */,
+				6224404B186DA6B500210BDF /* DSTDetailViewController.m */,
+			);
+			name = "Detail View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

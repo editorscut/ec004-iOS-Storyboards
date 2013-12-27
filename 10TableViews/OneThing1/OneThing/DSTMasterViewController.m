@@ -1,17 +1,8 @@
-//
-//  DSTMasterViewController.m
-//  OneThing
-//
-//  Created by Daniel Steinberg on 12/27/13.
-//  Copyright (c) 2013 Dim Sum Thinking. All rights reserved.
-//
-
 #import "DSTMasterViewController.h"
-
 #import "DSTDetailViewController.h"
+#import "DSTEvent.h"
 
 @interface DSTMasterViewController ()
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
 @implementation DSTMasterViewController
@@ -110,20 +101,21 @@
     return NO;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)        tableView:(UITableView *)tableView
+  didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-        self.detailViewController.detailItem = object;
+        DSTEvent *event = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+        self.detailViewController.event = event;
     }
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
+- (void)prepareForSegue:(UIStoryboardSegue *)segue
+                 sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-        [[segue destinationViewController] setDetailItem:object];
+        DSTEvent *event = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+        DSTDetailViewController *detailVC = segue.destinationViewController;
+        detailVC.event = event;
     }
 }
 
@@ -226,10 +218,11 @@
 }
  */
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+- (void)configureCell:(UITableViewCell *)cell
+          atIndexPath:(NSIndexPath *)indexPath
 {
-    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[object valueForKey:@"timeStamp"] description];
+    DSTEvent *event = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.textLabel.text = event.title;
 }
 
 @end
