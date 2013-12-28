@@ -27,6 +27,7 @@
 		62244060186DA6B500210BDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6224405E186DA6B500210BDF /* InfoPlist.strings */; };
 		62244062186DA6B500210BDF /* OneThingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62244061186DA6B500210BDF /* OneThingTests.m */; };
 		62244070186DA98C00210BDF /* DSTEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6224406F186DA98C00210BDF /* DSTEvent.m */; };
+		62244078186F063C00210BDF /* DSTInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62244077186F063C00210BDF /* DSTInputViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		62244061186DA6B500210BDF /* OneThingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneThingTests.m; sourceTree = "<group>"; };
 		6224406E186DA98C00210BDF /* DSTEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSTEvent.h; path = ../DSTEvent.h; sourceTree = "<group>"; };
 		6224406F186DA98C00210BDF /* DSTEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSTEvent.m; path = ../DSTEvent.m; sourceTree = "<group>"; };
+		62244076186F063C00210BDF /* DSTInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTInputViewController.h; sourceTree = "<group>"; };
+		62244077186F063C00210BDF /* DSTInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTInputViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,7 @@
 				62244072186DA9D300210BDF /* Storyboards */,
 				62244074186DA9E900210BDF /* Master View */,
 				62244075186DA9F200210BDF /* Detail View */,
+				62244079186F064000210BDF /* Input View */,
 				62244071186DA9C900210BDF /* Model */,
 				62244033186DA6B400210BDF /* Supporting Files */,
 			);
@@ -212,6 +216,15 @@
 				6224404B186DA6B500210BDF /* DSTDetailViewController.m */,
 			);
 			name = "Detail View";
+			sourceTree = "<group>";
+		};
+		62244079186F064000210BDF /* Input View */ = {
+			isa = PBXGroup;
+			children = (
+				62244076186F063C00210BDF /* DSTInputViewController.h */,
+				62244077186F063C00210BDF /* DSTInputViewController.m */,
+			);
+			name = "Input View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62244070186DA98C00210BDF /* DSTEvent.m in Sources */,
+				62244078186F063C00210BDF /* DSTInputViewController.m in Sources */,
 				6224403D186DA6B400210BDF /* DSTAppDelegate.m in Sources */,
 				62244046186DA6B400210BDF /* OneThing.xcdatamodeld in Sources */,
 				62244049186DA6B400210BDF /* DSTMasterViewController.m in Sources */,
