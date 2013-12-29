@@ -2,6 +2,7 @@
 #import "DSTDetailViewController.h"
 #import "DSTEvent.h"
 #import "DSTInputViewController.h"
+#import "DSTEventCell.h"
 
 @interface DSTMasterViewController ()
 @end
@@ -58,10 +59,12 @@
     return [sectionInfo numberOfObjects];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    [self configureCell:cell atIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    DSTEventCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"
+                                                         forIndexPath:indexPath];
+    [self configureCell:cell
+            atIndexPath:indexPath];
     return cell;
 }
 
@@ -185,7 +188,7 @@
             break;
             
         case NSFetchedResultsChangeUpdate:
-            [self configureCell:[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
+            [self configureCell:(DSTEventCell *)[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
             break;
             
         case NSFetchedResultsChangeMove:
@@ -210,11 +213,12 @@
 }
  */
 
-- (void)configureCell:(UITableViewCell *)cell
-          atIndexPath:(NSIndexPath *)indexPath
-{
+- (void)configureCell:(DSTEventCell *)cell
+          atIndexPath:(NSIndexPath *)indexPath {
     DSTEvent *event = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = event.title;
+    cell.titleLabel.text = event.title;
+    cell.descriptionLabel.text = event.eventDescription;
+    cell.dateLabel.text = [event.timeStamp description];
 }
 
 @end

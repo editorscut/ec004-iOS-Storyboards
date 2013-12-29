@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6210ECC2186F429900E636B9 /* DSTEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6210ECC1186F429900E636B9 /* DSTEventCell.m */; };
 		6224402B186DA6B400210BDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6224402A186DA6B400210BDF /* Foundation.framework */; };
 		6224402D186DA6B400210BDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6224402C186DA6B400210BDF /* CoreGraphics.framework */; };
 		6224402F186DA6B400210BDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6224402E186DA6B400210BDF /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6210ECC0186F429900E636B9 /* DSTEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTEventCell.h; sourceTree = "<group>"; };
+		6210ECC1186F429900E636B9 /* DSTEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTEventCell.m; sourceTree = "<group>"; };
 		62244027186DA6B400210BDF /* OneThing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneThing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6224402A186DA6B400210BDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6224402C186DA6B400210BDF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6210ECC3186F429F00E636B9 /* Event Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6210ECC0186F429900E636B9 /* DSTEventCell.h */,
+				6210ECC1186F429900E636B9 /* DSTEventCell.m */,
+			);
+			name = "Event Cell";
+			sourceTree = "<group>";
+		};
 		6224401E186DA6B400210BDF = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +148,7 @@
 				62244074186DA9E900210BDF /* Master View */,
 				62244075186DA9F200210BDF /* Detail View */,
 				62244079186F064000210BDF /* Input View */,
+				6210ECC3186F429F00E636B9 /* Event Cell */,
 				62244071186DA9C900210BDF /* Model */,
 				62244033186DA6B400210BDF /* Supporting Files */,
 			);
@@ -332,6 +345,7 @@
 				62244046186DA6B400210BDF /* OneThing.xcdatamodeld in Sources */,
 				62244049186DA6B400210BDF /* DSTMasterViewController.m in Sources */,
 				62244039186DA6B400210BDF /* main.m in Sources */,
+				6210ECC2186F429900E636B9 /* DSTEventCell.m in Sources */,
 				6224404C186DA6B500210BDF /* DSTDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
