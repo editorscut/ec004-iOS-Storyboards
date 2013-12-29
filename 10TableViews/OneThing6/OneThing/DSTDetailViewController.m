@@ -3,7 +3,9 @@
 
 @interface DSTDetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @end
 
 @implementation DSTDetailViewController
@@ -29,10 +31,24 @@
     // Update the user interface for the detail item.
 
     if (self.event) {
-        self.detailDescriptionLabel.text = self.event.title;
+        self.navigationItem.title = self.event.title;
+        self.descriptionLabel.text = self.event.eventDescription;
+        self.dateLabel.text = [[self fullDateFormatter] stringFromDate:self.event.timeStamp];
+        self.timeLabel.text = [[self mediumTimeFormatter] stringFromDate:self.event.timeStamp];
     }
 }
-
+- (NSDateFormatter *)fullDateFormatter {
+    NSDateFormatter *fullDateFormatter = [[NSDateFormatter alloc] init];
+    fullDateFormatter.dateStyle = NSDateFormatterFullStyle;
+    fullDateFormatter.timeStyle = NSDateFormatterNoStyle;
+    return fullDateFormatter;
+}
+- (NSDateFormatter *)mediumTimeFormatter {
+    NSDateFormatter *mediumTimeFormatter = [[NSDateFormatter alloc] init];
+    mediumTimeFormatter.dateStyle = NSDateFormatterNoStyle;
+    mediumTimeFormatter.timeStyle = NSDateFormatterMediumStyle;
+    return mediumTimeFormatter;
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
