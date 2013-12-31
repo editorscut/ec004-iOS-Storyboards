@@ -120,10 +120,10 @@
 				6243BB6418631DA800D89CC7 /* Main.storyboard */,
 				6243BB6718631DA800D89CC7 /* DSTViewController.h */,
 				6243BB6818631DA800D89CC7 /* DSTViewController.m */,
-				6243BB6A18631DA800D89CC7 /* Images.xcassets */,
-				6243BB5918631DA800D89CC7 /* Supporting Files */,
 				6243BB87186321BD00D89CC7 /* DSTSignInViewController.h */,
 				6243BB88186321BD00D89CC7 /* DSTSignInViewController.m */,
+				6243BB6A18631DA800D89CC7 /* Images.xcassets */,
+				6243BB5918631DA800D89CC7 /* Supporting Files */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -467,6 +467,7 @@
 				6243BB8318631DA800D89CC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6243BB8418631DA900D89CC7 /* Build configuration list for PBXNativeTarget "SignInTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +476,7 @@
 				6243BB8618631DA900D89CC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
