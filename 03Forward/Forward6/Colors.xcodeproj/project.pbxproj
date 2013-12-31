@@ -120,10 +120,10 @@
 				6274A6F118609166008460AC /* Main.storyboard */,
 				6274A6F418609166008460AC /* DSTViewController.h */,
 				6274A6F518609166008460AC /* DSTViewController.m */,
-				6274A6F718609166008460AC /* Images.xcassets */,
-				6274A6E618609166008460AC /* Supporting Files */,
 				6274A7141862161F008460AC /* DSTColorViewController.h */,
 				6274A7151862161F008460AC /* DSTColorViewController.m */,
+				6274A6F718609166008460AC /* Images.xcassets */,
+				6274A6E618609166008460AC /* Supporting Files */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
