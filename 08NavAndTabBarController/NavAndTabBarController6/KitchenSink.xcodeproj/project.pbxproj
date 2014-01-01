@@ -118,12 +118,12 @@
 				622725551865FACA00CAB37C /* DSTAppDelegate.h */,
 				622725561865FACA00CAB37C /* DSTAppDelegate.m */,
 				622725581865FACA00CAB37C /* Main.storyboard */,
-				6227255E1865FACA00CAB37C /* Images.xcassets */,
-				6227254D1865FACA00CAB37C /* Supporting Files */,
 				626863DD1865FEFF009E5EB3 /* DSTTableViewController.h */,
 				626863DE1865FEFF009E5EB3 /* DSTTableViewController.m */,
 				62F905D818666106002A5E48 /* DSTDetailViewController.h */,
 				62F905D918666106002A5E48 /* DSTDetailViewController.m */,
+				6227255E1865FACA00CAB37C /* Images.xcassets */,
+				6227254D1865FACA00CAB37C /* Supporting Files */,
 			);
 			path = KitchenSink;
 			sourceTree = "<group>";
