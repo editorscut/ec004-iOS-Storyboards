@@ -1,11 +1,3 @@
-//
-//  DSTEventCell.m
-//  OneThing
-//
-//  Created by Daniel Steinberg on 12/28/13.
-//  Copyright (c) 2013 Dim Sum Thinking. All rights reserved.
-//
-
 #import "DSTEventCell.h"
 
 @implementation DSTEventCell

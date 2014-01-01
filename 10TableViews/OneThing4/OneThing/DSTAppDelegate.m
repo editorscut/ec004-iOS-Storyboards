@@ -1,11 +1,3 @@
-//
-//  DSTAppDelegate.m
-//  OneThing
-//
-//  Created by Daniel Steinberg on 12/27/13.
-//  Copyright (c) 2013 Dim Sum Thinking. All rights reserved.
-//
-
 #import "DSTAppDelegate.h"
 
 #import "DSTMasterViewController.h"

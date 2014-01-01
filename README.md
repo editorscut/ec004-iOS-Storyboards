@@ -4,6 +4,8 @@ ec004-iOS-Storyboards
 
 This code is the companion code for the book "iOS Storyboards". It's sole purpose is to help you learn the material covered in the book.
 
+Note: This code has been updated to support version 1.5 of the book.
+
 You can find out more about the book at http://editorscut.com.
 
 This code is presented as is. Please consult the book for copyright notices and legal warning. The copyrights in the book apply to this source code as well.
