@@ -1,11 +1,3 @@
-//
-//  DSTAppDelegate.m
-//  KitchenSink
-//
-//  Created by Daniel Steinberg on 12/21/13.
-//  Copyright (c) 2013 Dim Sum Thinking. All rights reserved.
-//
-
 #import "DSTAppDelegate.h"
 
 @implementation DSTAppDelegate

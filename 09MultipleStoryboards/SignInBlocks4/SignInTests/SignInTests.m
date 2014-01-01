@@ -1,11 +1,3 @@
-//
-//  SignInTests.m
-//  SignInTests
-//
-//  Created by Daniel Steinberg on 12/19/13.
-//  Copyright (c) 2013 Dim Sum Thinking. All rights reserved.
-//
-
 #import <XCTest/XCTest.h>
 
 @interface SignInTests : XCTestCase
